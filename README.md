@@ -98,10 +98,10 @@
                 The Hourglass Model
             </h1>
             <p class="text-xl md:text-2xl text-purple-100 mb-2">
-                DME Product Hierarchy: From Category to Billing Scenario
+                DME Product Hierarchy: From Category to Pricing Options
             </p>
             <p class="text-lg text-purple-200 max-w-3xl mx-auto">
-                Watch how one product model explodes into dozens of unique billing scenarios
+                Watch how one product model explodes into dozens of unique pricing options
             </p>
         </div>
 
@@ -227,7 +227,7 @@
                     <div class="flex flex-col gap-2" style="width: 180px;">
                         <div class="text-center mb-2">
                             <span class="inline-block bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-bold">
-                                PRODUCTS
+                                PRODUCTS 📦
                             </span>
                         </div>
                         <div class="node-card level-4 bg-gradient-to-br from-purple-500 to-purple-600 text-white p-3 rounded-lg text-center text-sm shadow-lg">
@@ -269,7 +269,7 @@
                     <div class="flex flex-col gap-2" style="width: 180px;">
                         <div class="text-center mb-2">
                             <span class="inline-block bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-bold">
-                                UNITS
+                                UNITS 🎯
                             </span>
                         </div>
                         <div class="node-card level-5 bg-gradient-to-br from-orange-500 to-orange-600 text-white p-2 rounded-lg text-center text-xs shadow-md">
@@ -288,7 +288,7 @@
                             DonJoy/Medline
                         </div>
                         <div class="text-center mt-1 text-xs text-gray-600 font-semibold">
-                            5 Units<br/>(vendors)
+                            5 Units 🎯<br/>(from Supply Sources)
                         </div>
                     </div>
 
@@ -314,11 +314,11 @@
                         <div class="text-xs text-gray-500 font-semibold">💥</div>
                     </div>
 
-                    <!-- Level 6: Scenarios -->
+                    <!-- Level 6: Pricing Options -->
                     <div class="flex flex-col gap-1.5" style="width: 180px;">
                         <div class="text-center mb-2">
                             <span class="inline-block bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-bold">
-                                SCENARIOS
+                                PRICING OPTIONS 💰
                             </span>
                         </div>
                         <div class="node-card level-6 bg-gradient-to-br from-red-500 to-red-600 text-white p-2 rounded-lg text-center text-xs shadow-md">
@@ -349,7 +349,7 @@
                             + Many More...
                         </div>
                         <div class="text-center mt-1 text-xs text-gray-600 font-semibold">
-                            9+ Scenarios<br/>(payers/codes)
+                            9+ Pricing Options<br/>(per Unit × Code)
                         </div>
                     </div>
 
@@ -394,7 +394,47 @@
                     <h3 class="text-xl font-bold text-gray-800">The Explosion</h3>
                 </div>
                 <p class="text-gray-600 leading-relaxed">
-                    One item model generates <strong>dozens of final scenarios</strong> when combined with all manufacturer, vendor, and payer options. This is where complexity lives.
+                    One item model generates <strong>dozens of final pricing options</strong> when combined with all manufacturer, vendor, and payer options. This is where complexity lives.
+                </p>
+            </div>
+        </div>
+
+        <!-- Workflow Stages Explanation -->
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-xl border-2 border-indigo-200 mb-8">
+            <h3 class="text-2xl font-bold text-indigo-900 mb-6 flex items-center gap-3">
+                <span class="text-3xl">⚙️</span>
+                How the Workflow System Uses This Hierarchy
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl p-5 shadow-md border-l-4 border-green-500">
+                    <div class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                        <span class="text-2xl">✅</span>
+                        Stage 1 & 2: YOU ADD & LINK
+                    </div>
+                    <p class="text-sm text-gray-600 mb-2">
+                        You manually add: <strong>Products 📦</strong>, <strong>Billing Codes 📋</strong>, and <strong>Vendors 🏢</strong>
+                    </p>
+                    <p class="text-sm text-gray-600">
+                        Then you create: <strong>Billing Permissions ✅</strong> (Product ↔ Code) and <strong>Supply Sources 📦</strong> (Product ↔ Vendor)
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-5 shadow-md border-l-4 border-purple-500">
+                    <div class="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                        <span class="text-2xl">⚙️</span>
+                        Stage 3 & 4: SYSTEM AUTO-CREATES
+                    </div>
+                    <p class="text-sm text-gray-600 mb-2">
+                        System creates: <strong>Units 🎯</strong> automatically from each Supply Source (Product + Vendor)
+                    </p>
+                    <p class="text-sm text-gray-600">
+                        Then creates: <strong>Pricing Options 💰</strong> automatically (Unit × Billing Permission for every combination)
+                    </p>
+                </div>
+            </div>
+            <div class="mt-6 bg-gradient-to-r from-indigo-100 to-purple-100 rounded-xl p-5 border-2 border-indigo-300">
+                <div class="font-bold text-indigo-900 mb-2 text-lg">🔄 Complete Automation Flow:</div>
+                <p class="text-sm text-gray-700">
+                    <strong>Product 📦</strong> → Link to Code (Billing Permission ✅) + Link to Vendor (Supply Source 📦) → Creates <strong>Unit 🎯</strong> → Combines with all Billing Permissions → Creates <strong>Pricing Options 💰</strong> automatically!
                 </p>
             </div>
         </div>
@@ -421,7 +461,7 @@
                         Exponential Growth
                     </div>
                     <p class="text-sm text-gray-600">
-                        The math: 1 Item × 4 Manufacturers × 3 Vendors × 5 Payers = <strong>60 unique scenarios</strong> from a single model. And that's just the beginning!
+                        The math: 1 Item × 4 Manufacturers × 3 Vendors × 5 Billing Codes = <strong>60 unique pricing options</strong> (Units auto-created from Supply Sources, Pricing Options auto-created from Units + Billing Permissions)
                     </p>
                 </div>
                 <div class="bg-white rounded-xl p-5 shadow-md">
@@ -439,7 +479,7 @@
                         Data Model Power
                     </div>
                     <p class="text-sm text-gray-600">
-                        This 6-level hierarchy lets you: track inventory by vendor, compare pricing across payers, analyze margin by manufacturer, and ensure compliance at the scenario level.
+                        This 6-level hierarchy lets you: track inventory by vendor (Supply Sources 📦), compare pricing across payers, analyze margin by manufacturer, ensure compliance with Billing Permissions ✅, and automate Units 🎯 and Pricing Options 💰 creation.
                     </p>
                 </div>
             </div>
